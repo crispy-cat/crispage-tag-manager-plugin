@@ -5,18 +5,7 @@
 	
 	// Register extensions
 	installer_message("Registering extensions");
-	$app->extensions->registerExtension("crispycat/TagManagerPlugin", "plugin", "frontend");
-	
-	// Register plugins
-	$app->plugins->setPlugin("crispycat.TagManagerPlugin", new Plugin(array(
-		"id" => "crispycat.TagManagerPlugin",
-		"class" => "crispycat/TagManagerPlugin",
-		"priority" => 0,
-		"scope" => "frontend",
-		"created" => time(),
-		"modified" => time(),
-		"options" => array()
-	)));
+	ExtensionHelper::registerExtension("crispycat.tagmanagerplugin/TagManagerPlugin", "plugin", "frontend");
 	
 	installer_message("Tag manager plugin installed!", IMSG_INFO);
 ?>

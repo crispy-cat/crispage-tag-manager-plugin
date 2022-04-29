@@ -1,0 +1,16 @@
+{
+	"name": "TagManagerPlugin",
+	"class": "crispycat.tagmanagerplugin/TagManagerPlugin",
+	"description": "A tag manager plugin.",
+	"scope": "frontend",
+	"version":		"1.0.2",
+	"author":		"crispycat",
+	"author_url":	"https://crispy.cat",
+	"options": [
+		{
+			"type": "editor",
+			"name": "code",
+			"label": "Tag Manager Code"
+		}
+	]
+}
